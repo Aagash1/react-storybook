@@ -28,7 +28,6 @@ ProductCard.propTypes = {
   onAddToCart: PropTypes.func,
 };
 
-
 ProductCard.defaultProps = {
   rating: 0,
   inStock: true,
