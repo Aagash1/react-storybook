@@ -1,11 +1,10 @@
-import { Description } from "@storybook/blocks";
 import ProductCard from "../components/ProductCard";
 
 export default {
   title: "Components/ProductCard",
   component: ProductCard,
   args: {
-    // Common props for all stories
+  
     name: "Cool Sneakers",
     price: 89.99,
     image: "https://via.placeholder.com/150",
@@ -18,9 +17,6 @@ export default {
     },
   },
 };
-
-
-
 
 export const Default = {
   args: {

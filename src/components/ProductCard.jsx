@@ -1,7 +1,5 @@
-// src/components/ProductCard.jsx
 import React from "react";
 import PropTypes from "prop-types";
-// import "./ProductCard.css"; // Add styles later
 
 const ProductCard = ({ name, price, image, rating, inStock, onAddToCart }) => {
   return (
@@ -21,7 +19,6 @@ const ProductCard = ({ name, price, image, rating, inStock, onAddToCart }) => {
   );
 };
 
-// PropTypes for runtime validation
 ProductCard.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
