@@ -4,7 +4,6 @@ export default {
   title: "Components/ProductCard",
   component: ProductCard,
   args: {
-  
     name: "Cool Sneakers",
     price: 89.99,
     image: "https://via.placeholder.com/150",
