@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard.jsx";
-import { userEvent, within } from '@storybook/testing-library';
+import { userEvent, within ,expect} from '@storybook/test';
 import React from "react";
 export default {
   title: "Components/ProductCard",
@@ -63,6 +63,5 @@ OnSale.play = async ({ canvasElement }) => {
   // Simulate a click event
   await userEvent.click(button);
 
-  // Assert that the text appears after the click
-  canvas.getByText('This is toggled text!');
+  expect(canvas.getByText('This is toggled text!')).toBeInTheDocument();
 };
