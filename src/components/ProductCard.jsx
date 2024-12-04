@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 const ProductCard = ({ name, price, image, rating, inStock, onAddToCart }) => {
+  const [showText, setShowText] = useState(false);
   return (
     <div className={`product-card ${!inStock ? "out-of-stock" : ""}`}>
       <img src={image} alt={name} className="product-image" />
@@ -15,6 +16,12 @@ const ProductCard = ({ name, price, image, rating, inStock, onAddToCart }) => {
           Add to Cart
         </button>
       )}
+      <div>
+      <button onClick={() => setShowText(!showText)}>
+        {showText ? "Hide Text" : "Show Text"}
+      </button>
+      {showText && <p>This is toggled text!</p>}
+    </div>
     </div>
   );
 };
